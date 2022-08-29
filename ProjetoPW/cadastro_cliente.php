@@ -1,105 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8"><!--pontuação-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="login.css"> <!--LINK PARA O CSS-->
-    <title>TELA DE LOGIN</title>
-    
-</head>
-
-<body>
-
-    <div class="container">
-
-        <h2>CADASTRO</h2>
-
-        <form>
-
-            <div class="F/J">
-                <label for="select">Pessoa Física/Jurídica:</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <title>Tela Cadastro de Cliente</title>
+        <form action="gravarBanco.php" method="POST">
+    </head>
+    <body>
+        
+    <div align="center">
+        <table width="50%">
+        <form action="">
+            <div>
+                <h1>CADASTRO CLIENTE</h1>
+                <label class="visually-hidden" for="inlineFormSelectPref">Nome/Razão Social</label>
                 <br>
-                <select id="select" name="select">
-                    <option value="física">Física</option>
-                    <option value="jurídica">Jurídica</option>
+                <select name="pessoafj">
+                <option value="1">Pessoa Física</option>
+                <option value="2">Pessoa Jurídica</option>
                 </select>
-                   
-                </select>
+                <input type="text" placeholder="Razão Social" aria-label="Razão Social">
             </div>
-
-            <div class="nome">
-                <label for="nome">Nome/Razão Social:</label>
-                <br/>
-                <input type="text" name="nome" id="nome" class="inputNome" required placeholder="Seu nome ou razão social:">
-            </div><!--estado-->
-            
-            <div class="cpf/cnpj">
-                <label for="InputCpf">CPF/CNPJ:</label>
-                <br/>
-                <input type="cpf" class="type-cpf" id="cpf/cnpj"  required placeholder="Digite seu cpf/cnpj">
-            </div><!--div email-->
-            
-            <div class="celular">
-                <label for="inputCelular">Endereço:</label>
-                <br/>
-                <input type="text" id="endereço" class="input-padrao" required placeholder="Digite seu endereço"><!--para numeros de celular-->
-            </div><!--celular-->
-            
-            <div class="país">
-                <label for="país">Número:</label>
-                <br/>
-                <input type="number" name="numero" id="numero" class="inputNumero" required placeholder="Número da sua casa:">
-            </div><!--pais-->
-
-            <div class="estado">
-                <label for="estado">Bairro:</label>
-                <br/>
-                <input type="text" name="bairro" id="bairro" class="inputBairro" required placeholder="Seu bairro:">
-            </div><!--estado-->
-
-            <div class="estado">
-                <label for="estado">Cidade</label>
-                <br/>
-                <input type="text" name="cidade" id="cidade" class="inputCidade" required placeholder="Sua cidade">
-            </div><!--cidade-->
-
-            <div class="endereço">
-                <label for="endereço">CEP:</label>
-                <br/>
-                <input type="text" name="endereço" id="endereço" class="inputEndereço" required placeholder="Ex: 12345-678">
-            </div><!--endereço-->
-        
-            <div class="endereço">
-                <label for="endereço">Celular:</label>
-                <br/>
-                <input type="tel" name="celular" id="celular" class="inputCelular" required placeholder="(xx)xxxxx-xxxx">
-            </div><!--endereço-->
-            
-            <div class="endereço">
-                <label for="endereço">Email:</label>
-                <br/>
-                <input type="email" name="email" id="email" class="inputEmail" required placeholder="(xx)xxxxx-xxxx">
-            </div><!--endereço-->
-            <div class="endereço">
-                <label for="endereço">Observações:</label>
-                <br/>
-                <input type="observações" name="observações" id="observações" class="inputObservações" required placeholder="(xx)xxxxx-xxxx">
-            </div><!--endereço-->
             <br>
-            <button>OK</button>
-         </form>
-         
-        
-    </div>
+            <div class="mb-3"  class="text-md-left">
 
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu Nome">
+                </div>
+                <label for="formGroupExampleInput" class="form-label">CPF/CNPJ:</label>
+                <input type="text" name="cpf" placeholder="___.___.___-__">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Endereço:</label>
+                <input type="text" name="endereco" placeholder="Digite seu Endereço">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Número:</label>
+                <input type="text" name="numero" placeholder="Digite seu Número">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Bairro:</label>
+                <input type="text" name="bairro" placeholder="Digite seu Bairro">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Cidade:</label>
+                <input type="text" name="cidade" placeholder="Digite sua Cidade">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">CEP:</label>
+                <input type="text" name="cep" placeholder="Digite seu CEP">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Celular:</label>
+                <input type="number" name="celular" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">E-mail:</label>
+                <input type="text" name="email" placeholder="Digite seu E-mail">
+                </div>
+                <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Observações:</label>
+                <input type="text" name="obs" placeholder="Escreva sua observação">
+                <br>
+                <button type="submit">Ok</button></form>
+            </div>
+        </form>
+        </table>
+</div>
 
-    
-
-    
-
-<script src="login.js"></script> <!--link para js externo--> <!--colocar o JavaScript sempre na parte de baixo-->   
-</body>
-
-</html>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    </body>
+    </html>
