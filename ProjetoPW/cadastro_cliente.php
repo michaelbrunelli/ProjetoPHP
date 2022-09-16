@@ -26,7 +26,6 @@
             </div>
             <br>
             <div class="mb-3"  class="text-md-left">
-
                 <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Nome:</label>
                 <input type="text" name="nome" placeholder="Digite seu Nome">
@@ -71,7 +70,6 @@
         </form>
         </table>
 </div>
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     </body>
