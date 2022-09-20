@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <title>Tela Estoque</title>
-    
+        <form action="dbEstoque.php" method="POST">
     </head>
     <body>
 
@@ -40,17 +40,17 @@
                 <br>
                 <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Quantidade:</label>
-                <input type="text" id="formGroupExampleInput2">
+                <input type="text" name="qtd">
                 </div>
                 <br>
                 <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Unidade de Medida:</label>
-                <input type="text" id="formGroupExampleInput2">
+                <input type="text" name="um">
                 </div>
                 <br>
                 <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label">Valor:</label>
-                <input type="text" id="formGroupExampleInput2">
+                <input type="text" name="valor">
                 </div>
                 <br>
                 <button type="submit">Ok</button>
