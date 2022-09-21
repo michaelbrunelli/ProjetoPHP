@@ -12,10 +12,9 @@ echo "Nome do Produto: ".$qtd."<br>";
 echo "Nome do Produto: ".$um."<br>";
 echo "Nome do Produto: ".$valor."<br>";
 
-$query = mysqli_query($conexao, "insert into estoque (est_id,est_id_pro,est_qtd,est_valor,est_um)
-Values( '$produto''$qtd', '$um', '$valor')") ;
+$query = mysqli_query($conexao, "insert into estoque (est_id_pro, est_qtd, est_um, est_valor) Values( '$produto', '$qtd', '$um', '$valor')") ;
 
-$query = mysqli_query($conexao,"select est_id from estoque where est_id ='$produto'") or die ("erro1000");
+$query = mysqli_query($conexao,"select est_id_pro, est_qtd, est_um, est_valor from estoque where est_id_pro ='$produto'") or die ("erro1000");
 
 $resultado = mysqli_num_rows($query);
 $saida = mysqli_fetch_row($query);
