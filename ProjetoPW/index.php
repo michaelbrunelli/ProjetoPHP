@@ -35,7 +35,7 @@
                                             <img border="0" src="\ProjetoPW\botoes\pdv.jpg" title="PDV"></A></font></td>
                                         <td><font face="verdana, arial, helvetica" size=1><A href="estoque.php">
                                             <img border="0" src="\ProjetoPW\botoes\cad_Estoque.jpg" title="Estoque"></A></font></td>
-                                    </tr
+                                    </tr>
                                 </table>
                             </td>
                         </tr>
